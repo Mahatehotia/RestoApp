@@ -1,4 +1,4 @@
-INSERT INTO `paniers`(`idPanier`,`quantite`,`id_Conso`) VALUES
+INSERT INTO `paniers`(`idPanier`,`quantite`,`id_conso`) VALUES
 (1,2,1),
 (1,1,6),
 (1,1,8),
