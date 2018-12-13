@@ -68,6 +68,7 @@ CREATE TABLE commandes(
 	idCommande int(10) AUTO_INCREMENT NOT NULL,
 	nomCommande varchar(255) NOT NULL,
 	coutCommande Float(5) NOT NULL,
+	etatCommande enum('annulé','payé','en cours'),
 	id_panier int(10) NOT NULL,
 	id_client int(10) NOT NULL,
 	id_table int(10) NOT NULL,
