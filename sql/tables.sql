@@ -41,7 +41,7 @@ CREATE TABLE types(
 CREATE TABLE consommations(
 	idConso int(10) AUTO_INCREMENT NOT NULL,
 	nomConso varchar(255) NOT NULL,
-	prixConso float(5) NOT NULL,
+	prixConso float(10) NOT NULL,
 	detailConso varchar(255) NOT NULL,
 	id_type int(10) NOT NULL,
 	PRIMARY KEY (idConso),
@@ -55,7 +55,7 @@ CREATE TABLE consommations(
 CREATE TABLE paniers(
 	idPanier int(10) AUTO_INCREMENT NOT NULL,
 	quantite int(10) NOT NULL,
-	id_Conso int(10) NOT NULL,
+	id_conso int(10) NOT NULL,
 	PRIMARY KEY (idPanier, id_Conso),
 	FOREIGN KEY (id_Conso) REFERENCES consommations(idConso) ON DELETE CASCADE
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -67,7 +67,7 @@ CREATE TABLE paniers(
 CREATE TABLE commandes(
 	idCommande int(10) AUTO_INCREMENT NOT NULL,
 	nomCommande varchar(255) NOT NULL,
-	coutCommande Float(5) NOT NULL,
+	coutCommande Float(10) NOT NULL,
 	etatCommande enum('annulé','payé','en cours'),
 	id_panier int(10) NOT NULL,
 	id_client int(10) NOT NULL,
