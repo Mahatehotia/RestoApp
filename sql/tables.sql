@@ -2,6 +2,7 @@ DROP TABLE IF EXISTS commandes;
 DROP TABLE IF EXISTS paniers;
 DROP TABLE IF EXISTS consommations;
 DROP TABLE IF EXISTS types;
+DROP TABLE IF EXISTS regimes;
 DROP TABLE IF EXISTS tables;
 DROP TABLE IF EXISTS clients;
 
@@ -23,6 +24,14 @@ CREATE TABLE tables(
 	numTable int(10) NOT NULL
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+#------------------------------------------------------------
+# Table: Régimes alimentaire
+#------------------------------------------------------------
+CREATE TABLE regimes(
+	idRegime int(10) AUTO_INCREMENT NOT NULL,
+	nomRegime varchar(255) NOT NULL,
+	PRIMARY KEY (idRegime)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 #------------------------------------------------------------
 # Table: types de consommation
@@ -31,7 +40,9 @@ CREATE TABLE tables(
 CREATE TABLE types(
 	idType int(10) AUTO_INCREMENT NOT NULL,
 	nomType varchar(255) NOT NULL,
-	PRIMARY KEY (idType)
+	id_Regime int(10),
+	PRIMARY KEY (idType),
+	FOREIGN KEY (id_Regime) REFERENCES regimes(idRegime) ON DELETE CASCADE
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 #------------------------------------------------------------
