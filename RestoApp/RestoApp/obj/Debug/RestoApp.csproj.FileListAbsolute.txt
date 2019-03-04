@@ -1,0 +1,13 @@
+C:\Users\asus\Source\Repos\Mahatehotia\RestoApp\RestoApp\RestoApp\bin\Debug\RestoApp.exe.config
+C:\Users\asus\Source\Repos\Mahatehotia\RestoApp\RestoApp\RestoApp\bin\Debug\RestoApp.exe
+C:\Users\asus\Source\Repos\Mahatehotia\RestoApp\RestoApp\RestoApp\bin\Debug\RestoApp.pdb
+C:\Users\asus\Source\Repos\Mahatehotia\RestoApp\RestoApp\RestoApp\obj\Debug\RestoApp.csprojResolveAssemblyReference.cache
+C:\Users\asus\Source\Repos\Mahatehotia\RestoApp\RestoApp\RestoApp\obj\Debug\RestoApp.FrmConnexion.resources
+C:\Users\asus\Source\Repos\Mahatehotia\RestoApp\RestoApp\RestoApp\obj\Debug\RestoApp.Properties.Resources.resources
+C:\Users\asus\Source\Repos\Mahatehotia\RestoApp\RestoApp\RestoApp\obj\Debug\RestoApp.csproj.GenerateResource.Cache
+C:\Users\asus\Source\Repos\Mahatehotia\RestoApp\RestoApp\RestoApp\obj\Debug\RestoApp.csproj.CoreCompileInputs.cache
+C:\Users\asus\Source\Repos\Mahatehotia\RestoApp\RestoApp\RestoApp\obj\Debug\RestoApp.exe
+C:\Users\asus\Source\Repos\Mahatehotia\RestoApp\RestoApp\RestoApp\obj\Debug\RestoApp.pdb
+C:\Users\asus\Source\Repos\Mahatehotia\RestoApp\RestoApp\RestoApp\bin\Debug\MySql.Data.dll
+C:\Users\asus\Source\Repos\Mahatehotia\RestoApp\RestoApp\RestoApp\bin\Debug\Google.Protobuf.dll
+C:\Users\asus\Source\Repos\Mahatehotia\RestoApp\RestoApp\RestoApp\bin\Debug\MySql.Data.xml
