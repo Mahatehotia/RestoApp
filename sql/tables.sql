@@ -24,14 +24,7 @@ CREATE TABLE tables(
 	numTable int(10) NOT NULL
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-#------------------------------------------------------------
-# Table: Régimes alimentaire
-#------------------------------------------------------------
-CREATE TABLE regimes(
-	idRegime int(10) AUTO_INCREMENT NOT NULL,
-	nomRegime varchar(255) NOT NULL,
-	PRIMARY KEY (idRegime)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 #------------------------------------------------------------
 # Table: types de consommation
@@ -40,9 +33,16 @@ CREATE TABLE regimes(
 CREATE TABLE types(
 	idType int(10) AUTO_INCREMENT NOT NULL,
 	nomType varchar(255) NOT NULL,
-	id_Regime int(10),
 	PRIMARY KEY (idType),
-	FOREIGN KEY (id_Regime) REFERENCES regimes(idRegime) ON DELETE CASCADE
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+#------------------------------------------------------------
+# Table: Régimes alimentaire
+#------------------------------------------------------------
+CREATE TABLE regimes(
+	idRegime int(10) AUTO_INCREMENT NOT NULL,
+	nomRegime varchar(255) NOT NULL,
+	PRIMARY KEY (idRegime)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 #------------------------------------------------------------
@@ -55,8 +55,10 @@ CREATE TABLE consommations(
 	prixConso float(10) NOT NULL,
 	detailConso varchar(255) NOT NULL,
 	id_type int(10) NOT NULL,
+	id_Regime int(10),
 	PRIMARY KEY (idConso),
 	FOREIGN KEY (id_type) REFERENCES types(idType) ON DELETE CASCADE
+	FOREIGN KEY (id_Regime) REFERENCES regimes(idRegime) ON DELETE CASCADE
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 #------------------------------------------------------------
